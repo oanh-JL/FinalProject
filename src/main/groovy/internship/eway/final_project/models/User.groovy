@@ -16,16 +16,20 @@ class User {
     String email
     String password
     String role
+    String leaderId
+    String department
 
     User() {
     }
 
-    User(ObjectId _id, String userId, String userName, String email, String password, String role) {
+    User(String userId, String userName, String email, String password, String role, String leaderId, String department) {
         this._id = _id
         this.userId = userId
         this.userName = userName
         this.email = email
         this.password = password
         this.role = role
+        this.leaderId = leaderId
+        this.department = department
     }
 }
