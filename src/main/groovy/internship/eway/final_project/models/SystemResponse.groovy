@@ -1,4 +1,4 @@
-package intern.final_project_v1.model
+package internship.eway.final_project.models
 
 class SystemResponse {
     int code

@@ -19,19 +19,23 @@ class DailyDay {
     LocalDate date
     LocalTime checkIn
     LocalTime checkOut
+    LocalTime totalTime
     int status
     String reason
+    boolean  missing = false
 
     DailyDay() {
     }
 
-    DailyDay(ObjectId _id, String userId, LocalDate date, LocalTime checkIn, LocalTime checkOut, int status, String reason) {
+    DailyDay(ObjectId _id, String userId, LocalDate date, LocalTime checkIn, LocalTime checkOut,LocalTime totalTime , int status, String reason, boolean missing) {
         this._id = _id
         this.userId = userId
         this.date = date
         this.checkIn = checkIn
         this.checkOut = checkOut
+        this.totalTime = totalTime
         this.status = status
         this.reason = reason
+        this.missing = missing
     }
 }

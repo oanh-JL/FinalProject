@@ -14,8 +14,7 @@ class BallotRequest {
     @Id
     ObjectId _id
 
-    String senderId
-    String receiverId
+    String userId
     LocalDate createAt
     LocalDate dateFrom
     LocalDate dateTo
