@@ -1,4 +1,8 @@
 package internship.eway.final_project.repositories
 
-class BallotRequestRepository {
+import internship.eway.final_project.models.BallotRequest
+import org.bson.types.ObjectId
+import org.springframework.data.mongodb.repository.MongoRepository
+
+interface BallotRequestRepository extends MongoRepository<BallotRequest, ObjectId> {
 }
